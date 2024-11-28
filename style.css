@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("hkbg.jpg");
+    background-color: #cccccc;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+h1 {
+    color: #ffffff;
+}
+.input-section {
+    margin: 20px 0;
+}
+input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #00b7ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0062899b;
+    transform: scale(1.05);
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2);
+}
+.ingredients {
+    margin: 20px 0;
+}
+.ingredients span {
+    display: inline-block;
+    background-color: #ddd;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 0.9rem;
+}
+
+.ingredients span {
+    display: inline-block;
+    background-color: #ddd;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.ingredients span:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.label {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.vegan {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.vegetarian {
+    background-color: #FF9800;
+    color: white;
+}
+
+.label i {
+    font-size: 1.2em;
+}
+
+.label:hover {
+    opacity: 0.8;
+}
