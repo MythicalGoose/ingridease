@@ -57,6 +57,8 @@ async function findRecipes() {
     }
 }
 
+
+
 // ķip debugging
 async function fetchRecipesFromAPI() {
     const query = ingredients.join(',');
@@ -131,9 +133,16 @@ async function showRecipeDetails(recipe) {
 
         const detailedRecipe = await response.json();
 
+        const sanitizeHTML = (html) => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+            return doc.body.textContent || 'No instructions available.';
+        };
+
+        const instructions = sanitizeHTML(detailedRecipe.instructions);
         const usedIngredients = recipe.usedIngredients?.map(i => i.name).join(', ') || 'None';
         const missedIngredients = recipe.missedIngredients?.map(i => i.name).join(', ') || 'None';
-        const instructions = detailedRecipe.instructions || 'No instructions available.';
+
 
         document.getElementById('modal-title').textContent = detailedRecipe.title;
         document.getElementById('modal-image').src = detailedRecipe.image;
@@ -150,6 +159,9 @@ async function showRecipeDetails(recipe) {
         alert('Failed to load recipe details.');
     }
 }
+
+
+
 
 
 // Aizvērt modal
