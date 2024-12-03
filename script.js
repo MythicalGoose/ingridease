@@ -146,8 +146,7 @@ async function showRecipeDetails(recipe) {
 
         document.getElementById('modal-title').textContent = detailedRecipe.title;
         document.getElementById('modal-image').src = detailedRecipe.image;
-        
-        document.getElementById('modal-description').innerHTML = instructions; 
+        document.getElementById('modal-description').textContent = instructions; 
 
         document.getElementById('modal-ingredients-having').textContent = `${usedIngredients}`;
         document.getElementById('modal-ingredients-needing').textContent = `${missedIngredients}`;
@@ -159,8 +158,6 @@ async function showRecipeDetails(recipe) {
         alert('Failed to load recipe details.');
     }
 }
-
-
 
 
 
