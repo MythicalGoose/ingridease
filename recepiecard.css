@@ -49,6 +49,18 @@
     color: #666;
 }
 
+.vegan {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.vegetarian {
+    background-color: #FF9800;
+    color: white;
+}
+
+
+
 @media (max-width: 600px) {
     .recipe-card {
         max-width: 100%;
