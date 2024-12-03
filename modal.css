@@ -89,8 +89,13 @@
 }
 
 #modal-description {
-    color: #a4b5cc;
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    color: #4caf50;
     font-size: 1.1rem;
     line-height: 1.6;
     margin-top: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
