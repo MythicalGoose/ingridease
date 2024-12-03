@@ -39,7 +39,7 @@
 }
 
 .modal-content img {
-    max-width: 100%;
+    max-width: 75%;
     max-height: 300px;
     border-radius: 8px;
     margin-bottom: 15px;
@@ -71,4 +71,26 @@
 
 .modal-content button:hover {
     background-color: #0056b3;
+}
+
+#modal-ingredients-needing{
+    color: #ff5722;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#modal-ingredients-having{
+    color: #4caf50;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+#modal-description {
+    color: #a4b5cc;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 15px;
 }
