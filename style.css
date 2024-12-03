@@ -76,15 +76,7 @@ button:hover {
     gap: 5px;
 }
 
-.vegan {
-    background-color: #4CAF50;
-    color: white;
-}
 
-.vegetarian {
-    background-color: #FF9800;
-    color: white;
-}
 
 .label i {
     font-size: 1.2em;
