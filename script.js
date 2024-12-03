@@ -140,8 +140,8 @@ async function showRecipeDetails(recipe) {
         
         document.getElementById('modal-description').innerHTML = instructions; 
 
-        document.getElementById('modal-ingredients-having').textContent = `Ingredients You Have: ${usedIngredients}`;
-        document.getElementById('modal-ingredients-needing').textContent = `Ingredients You Need: ${missedIngredients}`;
+        document.getElementById('modal-ingredients-having').textContent = `${usedIngredients}`;
+        document.getElementById('modal-ingredients-needing').textContent = `${missedIngredients}`;
         
         const modal = document.getElementById('recipe-modal');
         modal.style.display = 'block';
