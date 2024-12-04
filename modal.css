@@ -74,28 +74,38 @@
 }
 
 #modal-ingredients-needing{
-    color: #ff5722;
-    font-size: 1rem;
-    line-height: 1.4;
-    margin-top: 10px;
-    font-weight: bold;
+    color: #ff3122;
+    background-color: #ebe3e3;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 15px;
+    font-weight: bolder;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #modal-ingredients-having{
     color: #4caf50;
-    font-size: 1.1rem;
+    background-color: #ebe3e3;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.2rem;
     line-height: 1.6;
     margin-top: 15px;
+    font-weight: bolder;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #modal-description {
-    background-color: #f5f5f5;
+    background-color: #ebe3e3;
     padding: 15px;
     border-radius: 8px;
-    color: #4caf50;
+    color: #4d3e39;
     font-size: 1.1rem;
     line-height: 1.6;
     margin-top: 15px;
+    font-weight: bolder;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
