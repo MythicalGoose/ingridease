@@ -109,8 +109,8 @@ function displayRecipes(matchingRecipes) {
                 <img src="${recipe.image}" alt="${recipe.title}">
                 <h3>${recipe.title}</h3>
                 ${labels ? `<p>${labels}</p>` : ''}
-                <p><strong>Ingredients You Have:</strong> ${usedIngredients}</p>
-                <p><strong>Ingredients You Need:</strong> ${missedIngredients}</p>
+                <p style="color: #2f302f;"><strong>Ingredients You Have:</strong> ${usedIngredients}</p>
+                <p style="color: #787a79;"><strong>Ingredients You Need:</strong> ${missedIngredients}</p>
             `;
 
             recipeCard.onclick = () => showRecipeDetails(recipe);
