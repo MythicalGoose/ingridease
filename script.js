@@ -1,7 +1,7 @@
 let ingredients = [];  // māsivs kurā iet sastāvdaļas
 
 // Spoonacular API Key
-const SPOONACULAR_API_KEY = '5bc615e1a0584264a0b127501d8c9ad2';
+const SPOONACULAR_API_KEY = 'dce0c13eb54348b69f124f0bbfd58d82';
 
 // ieliek sastāvdaļu listā
 function addIngredient() {
