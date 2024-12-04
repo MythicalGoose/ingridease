@@ -82,8 +82,7 @@ async function fetchRecipesFromAPI() {
 //displayo receptes
 function displayRecipes(matchingRecipes) {
     const recipesContainer = document.getElementById('recipes');
-    recipesContainer.innerHTML = ''; // Clear previous results
-
+    recipesContainer.innerHTML = '';
     if (matchingRecipes.length > 0) {
         matchingRecipes.forEach(recipe => {
             const recipeCard = document.createElement('div');
