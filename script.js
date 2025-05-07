@@ -160,15 +160,36 @@ async function showRecipeDetails(recipe) {
 
 
 
-// Aizvērt modal
 document.getElementById('close-modal').onclick = function () {
     document.getElementById('recipe-modal').style.display = 'none';
 };
 
-// Aizvērt modal ja nokilkšķina kaut kur outside modal
 window.onclick = function (event) {
     const modal = document.getElementById('recipe-modal');
     if (event.target === modal) {
         modal.style.display = 'none';
     }
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.querySelector(".modal");
+    const modalOverlay = document.querySelector(".modal-overlay");
+    const closeModalButton = document.querySelector(".close");
+
+    if (!sessionStorage.getItem("modalShown")) {
+        modal.style.display = "block";
+        modalOverlay.style.display = "block";
+
+        sessionStorage.setItem("modalShown", "true");
+    }
+
+    closeModalButton.addEventListener("click", () => {
+        modal.style.display = "none";
+        modalOverlay.style.display = "none";
+    });
+
+    modalOverlay.addEventListener("click", () => {
+        modal.style.display = "none";
+        modalOverlay.style.display = "none";
+    });
+});

@@ -1,68 +1,84 @@
 .recipes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
 }
 
 .recipe-card {
     position: relative;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+    border: none;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
     overflow: hidden;
     cursor: pointer;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
-    max-width: 250px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .recipe-card:hover {
-    transform: scale(1.05);
-    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2);
-    background-color: #f9f9f9;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
 }
 
 .recipe-card img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 12px;
     transition: transform 0.2s ease-in-out;
+    margin-bottom: 15px;
 }
 
 .recipe-card:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .recipe-card h3 {
     margin-top: 10px;
-    font-size: 1.2em;
-    color: #333;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: 10px;
 }
 
 .recipe-card p {
-    font-size: 1em;
-    color: #666;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
 }
 
-.vegan {
-    background-color: #4CAF50;
-    color: white;
+.recipe-card .badge {
+    padding: 8px 16px;
+    border-radius: 16px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color:#ffffff ;
+    margin-top: auto;
+    transition: background-color 0.3s ease;
 }
 
-.vegetarian {
-    background-color: #FF9800;
-    color: white;
+.recipe-card .badge.vegan {
+    background-color: #4caf50;
 }
 
+.recipe-card .badge.vegetarian {
+    background-color: #ff9800;
+}
 
+.recipe-card .badge:hover {
+    opacity: 0.9;
+}
 
 @media (max-width: 600px) {
-    .recipe-card {
-        max-width: 100%;
+    .recipes {
+        grid-template-columns: 1fr;
     }
 }
